@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- User file links -->
+<link rel="stylesheet" href="css/main.css">
+<script src="js/main.js" defer></script>
+<!-- Axios Script Tag here -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<title>Weather App</title>
+</head>
+<body>
+    <h1 class="text-center" >  Weather App </h1>
+    <h6 class="text-center" >  ~ current weather, anywhere in the world ~ </h6>
+
+    <!-- BOOTSTRAP START -->
+
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-8 col-lg-6 col-xl-4">
+                    
+                    <h3 class="mb-4 pb-2 fw-normal">The forecast in:</h3>
+                    
+                    <form name="testData" id="citySearch" class="text-center">
+
+                        <input type="text" id="city" placeholder="search your city" class="form-control rounded">
+                        <!-- <button type="submit" id="submitButton" >Get Weather</button> -->
+                    </form>
+                    
+              <div class="mb-4 pb-2">
+
+              </div>
+      
+              <div class="card shadow-0 border">
+                <div class="card-body p-4">
+      
+                  <h3 class="mb-1 sfw-normal" id="city_country">City, Co</h3>
+                  <p class="mb-2">Current temperature: <strong id="temp"></strong></p>
+                  <p>Feels like: <strong id="feelsLike"></strong></p>
+                  <p>High: <strong id="maxTemp"> </strong> &emsp; Low: <strong id="minTemp"></strong></p>
+                  <p>Humidity: <strong id="humidity"></strong></p>
+                  <p class="mb-0 me-4">Forecast: &nbsp; <i id="forecast"></i></p>
+
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
